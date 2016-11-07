@@ -6,6 +6,8 @@ Comprehensive project starter with ES6, babel and webpack
  - webpack
  - RxJS
  - Redux
+ - axios
+ - materializecss
  - LESS
 
 ### Extras

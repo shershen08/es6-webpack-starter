@@ -55,7 +55,9 @@ module.exports = {
             { test: /\.html$/, loader: 'html' },
             { test: /\.css$/, loader: ExtractTextPlugin.extract( 'css' ) },
             {test: /\.json$/, loader: 'json'},
-            {test: /\.less$/,loader: "style!css!less"}
+            {test: /\.less$/,loader: "style!css!less"},
+            {test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader'}
+
         ]
     },
     plugins: plugins
