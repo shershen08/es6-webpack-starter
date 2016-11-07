@@ -3,7 +3,7 @@ import menu from './menu'
 import page from 'page';
 import config from './app-config.json'
 import counter from  './components/counter/counter'
-
+import newslist from './components/newslist/'
 
 let appPage = page;
 
@@ -32,10 +32,12 @@ let init = () => {
 
     func();
 
-    console.log(config);
+    console.log('application config:', config);
     menu(appPage);
 
     counter();
+
+    newslist();
 }
 
 init();
