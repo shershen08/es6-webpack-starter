@@ -17,3 +17,4 @@ Comprehensive project starter with ES6, babel and webpack
 
  - ```npm install```
  - ```make run```
+ 

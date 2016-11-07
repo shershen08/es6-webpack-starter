@@ -1,11 +1,8 @@
-import { store } from './store'
 import func from './events'
 import menu from './menu'
-
 import page from 'page';
-
 import config from './app-config.json'
-
+import counter from  './components/counter/counter'
 
 
 let appPage = page;
@@ -31,12 +28,14 @@ let notfoundController = () => {
     
 }
 
-let init = (storeData) => {
-    //console.log('init', storeData);
+let init = () => {
+
     func();
 
     console.log(config);
     menu(appPage);
+
+    counter();
 }
 
-init(store);
+init();

@@ -1,7 +1,5 @@
 import { createStore } from 'redux'
 
-let store = createStore(counter);
-
 function counter(state = 0, action) {
   switch (action.type) {
   case 'INCREMENT':
@@ -13,10 +11,4 @@ function counter(state = 0, action) {
   }
 }
 
-store.subscribe(() =>
-  console.log(store.getState())
-)
-
-store.dispatch({ type: 'INCREMENT' })
-
-export default store
+export default counter
